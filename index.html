@@ -252,6 +252,106 @@
       </div>
     </div>
   </div>
+
+  <!-- Contact -->
+  <div class="container-fluid text-white" id="contact" style="background-color: #303030;">
+    <div class="row pt-5">
+      <div class="col-12 text-center">
+        <h4><strong>It was a bumpy ride</strong></h4>
+        <p class="lead">But dreams have a tendency to play hard to get right</p>
+      </div>
+    </div>
+    <div class="container pb-5">
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="border border-light pt-2 pb-1 mb-2 mb-md-0">
+            <h1 class="display-4 text-center mb-0">29</h1>
+            <p class="text-center mb-0">Failed attempts</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="border border-light pt-2 pb-1 mb-2 mb-md-0">
+            <h1 class="display-4 text-center mb-0">100</h1>
+            <p class="text-center mb-0">Successful attempts</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="border border-light pt-2 pb-1 mb-2 mb-md-0">
+            <h1 class="display-4 text-center mb-0">19</h1>
+            <p class="text-center mb-0">Failed attempts</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="border border-light pt-2 pb-1 mb-2 mb-md-0">
+            <h1 class="display-4 text-center mb-0">52</h1>
+            <p class="text-center mb-0">Successful attempts</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <h4>Get in Touch</h4>
+        <p>I can be totally stalked online.Give me a shout-out.</p>
+      </div>
+    </div>
+    <div class="row text-white justify-content-center mb-2">
+      <div class="col-md-8">
+        <h4>Send a message</h4>
+      </div>
+    </div>
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-8">
+        <form action="" class="needs-validation" id="messageform" novalidate>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="uname" class="sr-only">Your name</label>
+              <input type="text" class="form-control" id="uname" name="uname" placeholder="Name" required>
+              <div class="invalid-feedback">
+                Please enter your name.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="email" class="sr-only">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+              <div class="invalid-feedback">
+                Please enter your email.
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="messagefield" class="sr-only">Message</label>
+            <textarea class="form-control" id="messagefield" name="messagefield" placeholder="Message..." rows="4" required></textarea>
+            <div class="invalid-feedback">
+              Please enter something you want to tell us.
+            </div>
+          </div>
+          <div class="form-row">
+            <button class="btn btn-success mx-auto px-5" type="submit"><strong class="lead">Send Message</strong></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="container-fluid pt-5 pb-2" id="footer" style="background-color: #d3d3d3;">
+    <div class="row">
+      <div class="col-12 text-center">
+        <p style="font-size: 15px;"><em>"Work hard in silence,let the success make the noise."</em></p>
+        <p style="font-size: 15px;">Frank Ocean</p>
+        <div class="mb-3">
+          <a href="#" class="link-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="link-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="link-icon"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="link-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="link-icon"><i class="fab fa-github"></i></a>
+          <a href="#" class="link-icon"><i class="fab fa-stack-overflow"></i></a>
+        </div>
+        <p class="footer text-muted"><small>&copy;All rights reserved to Asad Mujumder</small></p>
+      </div>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -261,6 +361,26 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
 </body>
 
 </html>

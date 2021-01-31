@@ -13,3 +13,27 @@ body{
 .about-container{
     background-color: #00BDBD;
 }
+/*
+input[type=text]:focus {
+    background-color: lightblue;
+}
+*/
+
+#messageform textarea{
+    resize:none;
+}
+
+a.link-icon{
+    display: inline-block;
+    width: 50px;
+    height: auto;
+    font-size: 32px;
+    background-color:#212529;
+    border-radius: 50%;
+    color:white;
+}
+
+a.link-icon:hover{
+    background-color:#404040;
+}
+
